@@ -1,50 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   　　<title>{{ page.title }}</title>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
     <style>
         body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
         {
-            margin:0;padding:0
+            margin:0;
+            padding:0;
         }
         body{
-            background:url("");
+            font-size: 18px;
+            font-family:cursive;
             text-align: center;
+            background:url(1_393.gif);
         }
         #wapper{
-            position: relative;
+
         }
         #header{
-            height: 200px;
-            background-color: red;
+            margin-left:20%;
+            width: 64%;
+            height: 130px;
+        }
+        #header ul li{
+            text-decoration: none;
+            list-style: none;
+            float: left;
+            margin-left: 4%;
+            margin-top:7%;
+        }
+        #header ul li:hover{
+            color: red;
+            text-decoration: underline;
         }
         #left-box{
-            width: 490px;
-            height: 600px;
+            width: 16%;
+            height: 700px;
             float: left;
+            margin-left:18%;
+            margin-top:2%;
+            background:url(https://cnzhangheng.github.io/StrayBirds/themes/kunka/images/aside-bg.jpg) no-repeat #f1edea;
+        }
+        #left-box1{
+            width: 200px;
+            height: 120px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
             border: 1px solid #000;
-            position: absolute;
+            background-color: #91746c;
         }
         #right-box{
-            width: 490px;
-            height: 600px;
-            float: right;
-            border: 1px solid #000;
-            position: absolute;
+            width: 45%;
+            height: 800px;
+            float: left;
+            background-color: #f1edea;
+
+        }
+        #content-content{
+            height: 800px;
+            width: 4%;
+            float: left;
         }
     </style>
 </head>
 <body>
 <div id="wapper">
-    <div id="header"></div>
+    <div id="header">
+        <ul>
+            <li><a href="#"></a>首页</li>
+            <li><a href="#"></a>分类目录</li>
+            <li><a href="#"></a>文章归档</li>
+            <li><a href="#"></a>联系我</li>
+            <li><a href="#"></a>友情链接</li>
+        </ul>
+    </div>
     <div id="content">
         <div id="left-box">
+            <div id="left-box1">
+                <p>about me</p>
+                <img src="" alt="">
+            </div>
+            <p>RECENT POSTS</p>
+        </div>
+        <div id="content-content"></div>
+        <div id="right-box">
             {{ content }}
         </div>
-        <div id="right-box"></div>
     </div>
-
 </div>
 </body>
 </html>
