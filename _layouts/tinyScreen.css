@@ -1,0 +1,83 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 1em;
+    font-family:cursive;
+    text-align: center;
+    background:url(https://cnzhangheng.github.io/jekyll_demo/images/1_393.gif);
+}
+/*头部logo开始*/
+.logo{
+    margin-left: -40%;
+    margin-top: 45px;
+}
+.header{
+    width: 100%;
+    height: 130px;
+}
+.header ul li{
+    margin: auto;
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+.header ul li:nth-child(1){
+    margin-left: -180px;
+    margin-top: 80px;
+}
+.header ul li:nth-child(2){
+    margin-left: -130px;
+    margin-top: 80px;
+}
+.header ul li:nth-child(3){
+    margin-left: -50px;
+    margin-top: 80px;
+}
+.header ul li:nth-child(4){
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.header ul li:nth-child(5){
+    margin-left: 25px;
+    margin-top: 80px;
+}
+.header ul li:hover{
+    color: red;
+}
+/*头部结束*/
+/*content开始*/
+.left-box{
+    width: 375px;
+    height: 300px;
+    margin-left: -1px;
+    margin-top: -10px;
+    background:url(https://cnzhangheng.github.io/jekyll_demo/images/aside-bg.jpg) no-repeat #f1edea;
+}
+.left-box-box{
+    width: 90%;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #91746c;
+}
+.left-box-box p{
+    color:white;
+}
+.left-box-box img{
+    width:20%;
+    margin-top: 3px;
+}
+.right-box{
+    width: 375px;
+    min-height: 800px;
+    background-color: #e2ddd7;
+}
+/*content结束*/
+.footer{
+    width:53%;
+    margin-top:900px
+}
