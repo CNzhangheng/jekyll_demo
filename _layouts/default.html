@@ -2,88 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="pc.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)" href="tinyScreen.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 400px) and (max-device-width: 600px)" href="smallScreen.css" />
     <title>{{ page.title }}</title>
-    <style>
-        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
-        {
-            margin:0;
-            padding:0;
-        }
-        body{
-            font-size: 18px;
-            font-family:cursive;
-            text-align: center;
-            background:url(https://cnzhangheng.github.io/jekyll_demo/images/1_393.gif);
-        }
-        #logo{
-            margin-left: 100px;
-            margin-top: 45px;
-            float: left;
-        }
-        #header{
-            width: 980px;
-            height: 130px;
-            margin-left:200px;
-        }
-        #header ul li{
-            margin-left: 20px;
-            margin-top: 80px;
-            text-decoration: none;
-            list-style: none;
-            float: left;
-        }
-        #header ul li:hover{
-            color: red;
-            text-decoration: underline;
-        }
-        #left-box{
-            width: 300px;
-            height: 700px;
-            float: left;
-            margin-left:250px;
-            margin-top:30px;
-            background:url(https://cnzhangheng.github.io/jekyll_demo/images/aside-bg.jpg) no-repeat #f1edea;
-        }
-        #left-box-box{
-            width: 250px;
-            height: 120px;
-            margin-left: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
-            border: 1px solid #000;
-            background-color: #91746c;
-        }
-        #left-box-box p{
-            margin-left: 5px;
-            color: white;
-            font-size: 16px;
-            float: left;
-        }
-        #left-box-box img{
-            width: 70px;
-            margin-left: -230px;
-            margin-top: 25px;
-        }
-        #left-box-box img:hover{
-            box-shadow:2px 2px 2px black ;
-        }
-        #right-box{
-            width: 800px;
-            min-height: 800px;
-            float: left;
-            background-color: #e2ddd7;
-        }
-        .footer{
-            width:800px;
-            margin-top:100px
-        }
-    </style>
 </head>
 <body>
-<div id="wapper">
-    <div id="header">
-        <img id="logo" src="https://cnzhangheng.github.io/jekyll_demo/images/logo.png" alt="">
+<div class="wapper">
+    <div class="header">
+        <img class="logo" src="https://cnzhangheng.github.io/jekyll_demo/images/logo.png" alt="">
         <ul>
             <li><a href="https://cnzhangheng.github.io/jekyll_demo/"></a>首页</li>
             <li><a href="#"></a>分类目录</li>
@@ -92,16 +20,15 @@
             <li><a href="#"></a>友情链接</li>
         </ul>
     </div>
-    <div id="content">
-        <div id="left-box">
-            <div id="left-box-box">
+    <div class="content">
+        <div class="left-box">
+            <div class="left-box-box">
                 <p>about me</p>
-                <img src="https://cnzhangheng.github.io/jekyll_demo/images/head_portrait%20.jpg" alt="">
+                <img src="images/head_portrait%20.jpg" alt="">
             </div>
-            <p>RECENT POSTS</p>
         </div>
-     
-        <div id="right-box">
+
+        <div class="right-box">
             {{ content }}
         </div>
     </div>
