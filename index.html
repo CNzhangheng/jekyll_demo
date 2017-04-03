@@ -3,22 +3,11 @@ layout: default
 title: 我的博客
 ---
 <style>
-    .weaper{
-        margin:1em;
-        border: 1px solid grey;
-    } 
-    .header{
-        padding: 1em;
-        border: 1px solid grey;
-        background-color: #f5f0e6;
-    }
     li{
         list-style: none;
         margin-left:20%;
     }
 </style>
-<div class="weaper">
-    <div class="header">
 <h2>{{ page.title }}</h2>
 <ul>
     　{% for post in site.posts %}
@@ -26,5 +15,4 @@ title: 我的博客
     </li>
     　{% endfor %}
 </ul>
-        </div>
-</div>
+
