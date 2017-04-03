@@ -3,16 +3,21 @@ layout: default
 title: 我的博客
 ---
 <style>
+    div{
+        padding: 1em;
+        border: 1px solid grey;
+    }
     li{
         list-style: none;
-        float: left;
-        margin-left:3%;
+        margin-left:20%;
     }
 </style>
+<div>
 <h2>{{ page.title }}</h2>
 <ul>
     　{% for post in site.posts %}
-<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-</li>
+    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
     　{% endfor %}
 </ul>
+</div>
