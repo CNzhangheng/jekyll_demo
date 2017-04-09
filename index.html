@@ -34,7 +34,7 @@ title: 我的博客
         {% for post in site.posts %}　
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </div>
-    <div>100字...显示全部</div>
+    <div>{{content}}</div>
     <div class="content-warp-date">
         <li>{{ post.date | date_to_string }}</li>
         {% endfor %}
