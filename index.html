@@ -2,11 +2,24 @@
 layout: default
 title: 我的博客
 ---
+<style>
+    .content-warp{
+        width: 700px;
+        min-height: 100px;
+        padding-bottom: 20px;
+        border-bottom:1px solid grey;
+    }
+</style>
 <h2>{{ page.title }}</h2>
-<ul>
-    　{% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-    　{% endfor %}
-</ul>
+<div class="content-warp">
+    <div>
+        {% for post in site.posts %}　
+        <li class="content-warp-h2"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    </div>
+    <div>100字...显示全部</div>
+    <div>
+        <li class="content-warp-date"><img src="" alt="">{{ post.date | date_to_string }}</li>
+        {% endfor %}
+    </div>
+</div>
 
