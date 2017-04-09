@@ -2,16 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="css/pc.min.css">
+    <title>Title</title>
+    <style>
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+        {
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .header,.container,.footer{
+            margin: 0 auto;
+            width: 100%;
+        }
+        .header{
+            min-height: 100px;
+            background-color: #0767c6;
+        }
+        .contentWrap {
+            margin-left: -500px;
+            float: left;
+            width: 100%;
+        }
+        .content {
+            margin-left: 500px;
+            min-height: 800px;
+            background-color: green;
+        }
+        .side {
+            float: right;
+            min-height: 800px;
+            width: 500px;
+        }
+        .side-top{
+            height: 300px;
+        }
+        .side-content{
+            height: 500px;
+        }
+        .footer {
+            min-height: 100px;
+            clear: both;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
 <div class="header"></div>
-<div class="content">
-    <div class="content-left">
+<div class="container">
+    <div class="contentWrap">
+        <div class="content">{{content}}</div>
     </div>
-    <div class="content-right">
-        {{content}}
+    <div class="side">
+        <div class="side-top">简单的动画效果</div>
+        <div class="side-content">
+            <ul>
+                <li><img src="" alt=""><a href="">我的收藏</a></li>
+                <li><img src="" alt=""><a href="">我关注的博客</a></li>
+                <li><img src="" alt=""><a href="">现状</a></li>
+                <li><img src="" alt=""><a href="">联系我</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 <div class="footer"></div>
