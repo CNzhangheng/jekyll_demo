@@ -22,8 +22,7 @@ title: 我的博客
 </style>
 <h2>{{ page.title }}</h2>
 <div class="content-warp">
-    <div class="content-warp-h2">
-        <img src="images/da8e974dc_s.jpg" alt="">
+    <div class="content-warp-h2">        
         {% for post in site.posts %}　
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </div>
