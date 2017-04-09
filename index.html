@@ -3,22 +3,40 @@ layout: default
 title: 我的博客
 ---
 <style>
+    body{
+        line-height: 1.2em;
+        font-family: cursive;
+    }
+    a{
+        font-size: 1.5em;
+    }
+    li{
+        list-style: none;
+    }
     .content-warp{
         width: 700px;
         min-height: 100px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .content-warp-date{
         padding-bottom: 20px;
         border-bottom:1px solid grey;
+    }
+    .content-warp-date li{
+        margin-right: 300px;
     }
 </style>
 <h2>{{ page.title }}</h2>
 <div class="content-warp">
-    <div>
+    <div class="content-warp-h2">
+        <img src="images/da8e974dc_s.jpg" alt="">
         {% for post in site.posts %}　
-        <li class="content-warp-h2"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </div>
     <div>100字...显示全部</div>
-    <div>
-        <li class="content-warp-date"><img src="" alt="">{{ post.date | date_to_string }}</li>
+    <div class="content-warp-date">
+        <li>{{ post.date | date_to_string }}</li>
         {% endfor %}
     </div>
 </div>
