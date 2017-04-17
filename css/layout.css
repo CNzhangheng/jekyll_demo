@@ -1,0 +1,73 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.4rem;
+    font-family:Arial,SimSun,FangSong;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header,.container,.footer{
+    margin: 0 auto;
+    width: 100%;
+}
+.header{
+    min-height: 6rem;
+    background-color: #0767c6;
+}
+.contentWrap {
+    margin-left: -30%;
+    float: left;
+    width: 100%;
+}
+.content {
+    margin-left: 31%;
+    margin-top: 0.5rem;
+    min-height: 80rem;
+    padding:1.2rem;
+    border: 1px solid #ccc;
+    border-radius:0 2% 0 0 ;
+    box-shadow: 2px 2px #ccc;
+}
+.content-warp-date{
+    font-family: cursive;
+}
+.content-warp-date:first-child:hover{
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+}
+.side {
+    float: right;
+    min-height: 80rem;
+    width: 30%;
+}
+.side-top{
+    height: 30rem;
+}
+.side-content{
+    margin-left: 0.5rem;
+    height: 50rem;
+}
+.footer {
+    min-height: 6rem;
+    clear: both;
+    background-color: #000;
+    border-top: 3px solid #fff;
+}
+.footer p{
+    color: #ccc;
+    text-align: center;
+    line-height: 6rem;
+}
