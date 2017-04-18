@@ -22,11 +22,11 @@ title: 我的博客
 <h2>{{ page.title }}</h2>
 <div class="content-warp">
     <div class="content-warp-h2">
-        {% for collect in site.collects %}　
-        <li><a href="{{ site.baseurl }}{{ collect.url }}">{{ collect.title }}</a></li>
+        {% for post in site.posts %}　
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </div>
     <div class="content-warp-date">
-        <li>{{ collect.date | date_to_string }}</li>
+        <li>{{ post.date | date_to_string }}</li>
         {% endfor %}
     </div>
 </div>
