@@ -15,3 +15,18 @@ title: 我的博客
     </div>
 </div>
 
+
+<h2>{{ page.title }}</h2>
+<div class="content-warp">
+    <div class="content-warp-h2">        
+        {% for post in site.posts %}　
+        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    </div>
+    <div></div>
+    <div class="content-warp-date">
+        <li>{{ post.date | date_to_string }}</li>
+        {% endfor %}
+    </div>
+</div>
+
+
