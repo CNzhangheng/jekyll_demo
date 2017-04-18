@@ -2,31 +2,31 @@
 layout: default
 title: 我的博客
 ---
+<style>
+    .content-warp{
+        min-width:30%;
+        display: inline-block;
+    }
+</style>
 <h2>{{ page.title }}</h2>
 <div class="content-warp">
-    <div class="content-warp-h2">        
+    <div class="content-warp-h2">
         {% for post in site.posts %}　
         <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </div>
-    <div></div>
     <div class="content-warp-date">
         <li>{{ post.date | date_to_string }}</li>
         {% endfor %}
     </div>
 </div>
-
-
-<h2>{{ page.title }}</h2>
+<h2>我的收藏</h2>
 <div class="content-warp">
-    <div class="content-warp-h2">        
-        {% for post in site.posts %}　
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    <div class="content-warp-h2">
+        {% for collect in site.collects %}　
+        <li><a href="{{ site.baseurl }}{{ collect.url }}">{{ collect.title }}</a></li>
     </div>
-    <div></div>
     <div class="content-warp-date">
-        <li>{{ post.date | date_to_string }}</li>
+        <li>{{ collect.date | date_to_string }}</li>
         {% endfor %}
     </div>
 </div>
-
-
