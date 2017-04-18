@@ -5,7 +5,7 @@ title: 我的博客
 <style>
     .content-warp{
         min-width:30%;
-        display: inline-block;
+        float:left;
     }
 </style>
 <h2>{{ page.title }}</h2>
@@ -19,7 +19,7 @@ title: 我的博客
         {% endfor %}
     </div>
 </div>
-<h2>我的收藏</h2>
+<h2>{{ page.title }}</h2>
 <div class="content-warp">
     <div class="content-warp-h2">
         {% for collect in site.collects %}　
