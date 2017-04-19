@@ -2,121 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CNzhangheng个人博客</title>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{{ BASE_PATH }}/../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/../css/layout.css">
 </head>
-    <style>
-    html{
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.4rem;
-    font-family:Arial,SimSun,FangSong;
-}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
-{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-.header,.container,.footer{
-    margin: 0 auto;
-    width: 100%;
-}
-.header{
-    min-height: 6rem;
-    background-color: #0767c6;
-}
-.contentWrap {
-    margin-left: -30%;
-    float: left;
-    width: 100%;
-}
-.content {
-    margin-left: 31%;
-    margin-top: 0.5rem;
-    min-height: 80rem;
-    padding:1.2rem;
-    border: 1px solid #ccc;
-    border-radius:0 2% 0 0 ;
-    box-shadow: 2px 2px #ccc;
-}
-.content-warp-date{
-    font-family: cursive;
-}
-.content-warp-date:first-child:hover{
-    filter:alpha(opacity=50);
-    opacity: 0.5;
-    -moz-opacity:0.5;
-    -khtml-opacity: 0.5;
-}
-.side {
-    float: right;
-    min-height: 80rem;
-    width: 30%;
-}
-.side-top{
-    height: 30rem;
-}
-.side-content{
-    margin-left: 0.5rem;
-    height: 50rem;
-}
-.footer {
-    min-height: 6rem;
-    clear: both;
-    background-color: #000;
-    border-top: 3px solid #fff;
-}
-.footer p{
-    color: #ccc;
-    text-align: center;
-    line-height: 6rem;
-}
-</style>
 <body>
-<div class="header"></div>
-<div class="container">
-    <div class="contentWrap">
+{% include header.html %}
+<div class="main">
+    <div class="sidewrap">
+        {% include side.html %}
+    </div>
+    <div class="contentwarp">
         <div class="content">
-            <i class="fa fa-map-signs" aria-hidden="true"></i>
-            {{content}}
-        </div>
-    </div>
-    <div class="side">
-        <div class="side-top">
-            <ul>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-            </ul>
-        </div>
-        <div class="side-content">
-            <ul>
-                <i class="fa fa-star-o" aria-hidden="true">
-                    <a href="#">&nbsp;我关注的博客</a>
-                </i><br>
-                <i class="fa fa-user-o" aria-hidden="true">
-                    <a href="#">&nbsp;关于我</a></i><br>
-                <i class="fa fa-align-justify" aria-hidden="true">
-                    <a href="#">&nbsp;其他</a></i><br>
-                <i class="fa fa-weixin" aria-hidden="true">
-                    <a href="#">&nbsp;联系我</a></i><br>
-            </ul>
-        </div>
-    </div>
+    {{content}}
 </div>
-<div class="footer">
-    <p>版权所有&copy;CNzhangheng</p>
 </div>
+</div>
+{% include footer.html %}
 </body>
 </html>
